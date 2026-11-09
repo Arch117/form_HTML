@@ -4,12 +4,19 @@
     <head>
         <title>Page title</title>
     </head>
+    <link rel="stylesheet" href="style.css">
     <body>
         <h2 style="text-align:center;">Details Form</h2>
         <p style="text-align:center; background-color:yellow">Fill in the requirements:</p>
+
+        <label id="load">Loading</label>
+        <div class="load1"></div>
+        <div class="load2"></div>
+        <div class="load3"></div><br><br>
+
         <form>
             <label for="e">Enter email:</label>
-            <input type="email" id="e" name="email" value="example@gmail.com"><br>
+            <input type="email" id="e" name="email" placeholder="example@gmail.com"><br>
             <label for="pass">Password:</label>
             <input type="password" id="pass"><br>
             <label for="tel">Contact No.:</label>
@@ -17,7 +24,7 @@
             
             <!--User to select their gender-->
             <label>Select Gender:</label><br>
-            <input type="radio" id="r1" name="rad">
+            <input type="radio" id="r1" name="rad" checked>
             <label for="r1">Male:</label><br>
             <input type="radio" id="r2" name="rad">
             <label for="r2">Female:</label><br>
@@ -32,10 +39,42 @@
             </select><br><br>
             <label for="c">Send me notifications:</label>
             <input type="checkbox" id="c"><br><br>
-            <input type="submit">
+            Address:<br>
+                <textarea cols="30" rows="5" placeholder="Enter your address here...">
+                </textarea><br>
+            <input type="submit"><br>
+
+                programming languages: 
+                <label for="c1">Java</label><input type="checkbox" id="c1" name="c1">
+                <label for="c2">JavaScript</label><input type="checkbox" id="c2" name="c2" checked>
+                <label for="c3">C++</label><input type="checkbox" id="c3" name="c3"><br><br>
+
+                <table border="3" style="width: 70%;">
+                    <caption><b>Rowspan and colspan</b></caption>
+                    <tr>
+                        <th>Caption1</th>
+                        <th>Caption2</th>
+                        <th>Caption3</th>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Num1</td>
+                        <td>Num1</td>
+                    </tr>
+
+                </table><br>
+
+                Upload your file:<br>
+                <input type="file" name="file_upload"id="f"><br><br>
+                Date and Time:<br>
+                <input type="date"><br>
+                <input type="datetime"><br>
+                <input type="datetime-local"><br>
+                <input type="month">
+
         </form><br>
         <mark>Coding</mark>
-        <marquee style="background-color: lightblue;"><mark><b>Thanks for shopping with us</b></mark></marquee>
+        <marquee style="background-color: lightblue;"><mark><b>Thank you for shopping with us</b></mark></marquee>
+
 
     </body>
 </html>
